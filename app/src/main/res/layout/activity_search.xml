@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/main_bg_color"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/bg_convers_top">
+
+            <RelativeLayout
+                android:id="@+id/rlyt_seasrch"
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:src="@drawable/icon_sousuo" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_search_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/iv_delete_input"
+                android:background="@null"
+                android:hint="输入关键词查找片源"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/main_text_yel_color"
+                android:textColorHint="@color/main_text_gray_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_delete_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/icon_shanchu" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/main_bq_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_search_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llyt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlyt_lishi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史搜索"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_del_jl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_laji" />
+        </RelativeLayout>
+
+        <com.zcf.bananavideohannan.view.AutoLinefeedLayout
+            android:id="@+id/afl_search_jl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_item_playNum"
+            android:layout_below="@+id/tv_item_filmName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            app:horizontalSpacing="15dp"
+            app:verticalSpacing="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlyt_rem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热门搜索"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <com.zcf.bananavideohannan.view.AutoLinefeedLayout
+            android:id="@+id/afl_search_bq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_item_playNum"
+            android:layout_below="@+id/tv_item_filmName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            app:horizontalSpacing="15dp"
+            app:verticalSpacing="15dp" />
+    </LinearLayout>
+</LinearLayout>

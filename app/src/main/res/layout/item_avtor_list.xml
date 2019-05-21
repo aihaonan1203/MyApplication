@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf3fe">
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="135dp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/llyt_actor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zcf.bananavideohannan.view.XCRoundImageView
+                    android:id="@+id/iv_av_head"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/moren_headimg" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/iv_av_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="名字"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

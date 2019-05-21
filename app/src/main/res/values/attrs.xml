@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SaundProgressBar">
+        <attr name="progressIndicator" format="reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="textAlign">
+            <flag name="left" value="0" />
+            <flag name="center" value="1" />
+            <flag name="right" value="2" />
+        </attr>
+        <attr name="offset" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoLinefeedLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+    !--
+    border_thickness 设置边框的宽度
+    border_inside_color 设置内边框的颜色
+    border_outside_color 设置外边框的颜色
+    内外边框如果只设置一个的话，则认为只显示一个边框。
+    -->
+    <declare-styleable name="RoundImageView">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llyt_item_film"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <ImageView
+                android:id="@+id/iv_item_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_item_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_filmName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textColor="@color/cl333333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/video_play_cnxih_bq"
+                        android:text="测试" />
+
+                    <TextView
+                        style="@style/video_play_cnxih_bq"
+                        android:layout_marginLeft="10dp"
+                        android:text="测试数据" />
+
+                    <TextView
+                        style="@style/video_play_cnxih_bq"
+                        android:layout_marginLeft="10dp"
+                        android:text="测试数据" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/video_play_cnxih_bq"
+                        android:text="测试数据" />
+
+                    <TextView
+                        style="@style/video_play_cnxih_bq"
+                        android:layout_marginLeft="10dp"
+                        android:text="测试数据" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_playNum"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center|left"
+                android:textColor="@color/cl333333"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

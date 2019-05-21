@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/my_p_lay"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/main_bg_color1"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_fanhui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="推广"
+                android:textColor="@color/main_bq_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="我的推广"
+                android:textColor="@color/main_bq_color"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_p_lay"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--==========第一块=============-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/frame3"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.zcf.bananavideohannan.view.XCRoundImageView
+                            android:id="@+id/iv_head"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/moren_headimg" />
+
+                        <LinearLayout
+                            android:id="@+id/llllt1"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/iv_head"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/iv_head"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#bc915d" />
+
+                            <TextView
+                                android:id="@+id/tv_yaoqingma"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的邀请码："
+                                android:textColor="#bc915d" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlyt_erweima"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="30dp"
+                                android:gravity="center"
+                                android:text="二维码" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/btn_enter_2" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/icon_rumen" />
+
+                            <TextView
+                                android:id="@+id/tv_level_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lv0小白"
+                                android:textColor="#bc915d" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:background="#dab280" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tv_lessd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/icon_rumenkou" />
+
+                            <TextView
+                                android:id="@+id/tv_level_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="L1入门"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--=============第二块=============-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/frame2"
+                    android:orientation="horizontal"
+                    android:padding="15dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_look_max_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="6"
+                                android:textColor="#bc915d"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="今日可观看次数"
+                                android:textColor="#bc915d" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#f4f4f4">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/tv_lesslook_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="4"
+                                android:textColor="#f65758"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="剩余观看次数"
+                                android:textColor="@color/tuig_cl" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--======第四块=====-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/frame2"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="每日任务"
+                        android:textColor="@color/tuig_cl"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="每日点击广告，当日影片次数+1，次数不累计"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/frame2"
+                    android:orientation="vertical"
+                    android:paddingBottom="25dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="推广任务"
+                        android:textColor="@color/tuig_cl"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:inputType="textMultiLine"
+                        android:lineSpacingExtra="5dp"
+                        android:text="推广给好友成功下载APP并打开或注册时好友填写你的邀请码，可以永久增加每日观影次数及缓存次数。每日缓存次数同推广人数" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_rumen_1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="入门徽章"
+                                    android:textColor="@color/tuig_cl"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="推广1人-每日观影次数+1" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_rumen_1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="进阶徽章"
+                                    android:textColor="@color/tuig_cl"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="推广3人-每日观影次数+3" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_rumen_1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="达人徽章"
+                                    android:textColor="@color/tuig_cl"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="推广10人-每日观影次数+30，缓存次数+10" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_rumen_1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="专家徽章"
+                                    android:textColor="@color/tuig_cl"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="推广30人-每日观影次数+50，缓存次数+30" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_rumen_1" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="教授徽章"
+                                    android:textColor="@color/tuig_cl"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="推广30人-每日观影次数+无限，缓存次数+50" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/bg_convers_white_channel_bq_border_ty"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_convers_tg_top"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="1.用户名注册"
+                            android:textColor="@color/tuig_cl"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:background="@drawable/bg_convers_tg_bottom"
+                            android:gravity="center|left"
+                            android:lineSpacingExtra="5dp"
+                            android:paddingLeft="10dp"
+                            android:text="用户名注册，每日观影次数+2\n用户名注册并绑定手机号，每日观影次数+4" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/bg_convers_white_channel_bq_border_ty"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_convers_tg_top"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="2.手机号注册"
+                            android:textColor="@color/tuig_cl"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="86dp"
+                            android:background="@drawable/bg_convers_tg_bottom"
+                            android:gravity="center|left"
+                            android:lineSpacingExtra="5dp"
+                            android:paddingLeft="10dp"
+                            android:text="手机号注册，每日观影次数+4,(为防止APP被封丢失您的推广信息，可通过注册账号绑定推广人数，强烈建议注册)" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/bg_convers_white_channel_bq_border_ty"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_convers_tg_top"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="3.填写邀请码"
+                            android:textColor="@color/tuig_cl"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_convers_tg_bottom"
+                            android:gravity="center|left"
+                            android:lineSpacingExtra="5dp"
+                            android:paddingLeft="10dp"
+                            android:text="注册并填写好友邀请码，每日观影次数+2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/bg_convers_white_channel_bq_border_ty"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_convers_tg_top"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="4.保存二维码"
+                            android:textColor="@color/tuig_cl"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_convers_tg_bottom"
+                            android:gravity="center|left"
+                            android:lineSpacingExtra="5dp"
+                            android:paddingLeft="10dp"
+                            android:text="保存推广二维码，每日观影次数+1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:paddingBottom="15dp"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/btn_tuig"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_convers_white_channel_bq_border_ty"
+                android:text="立即推广"
+                android:textColor="@color/main_bq_color" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

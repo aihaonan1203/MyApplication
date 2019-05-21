@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/rlyt_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/login_bg"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <com.zcf.bananavideohannan.view.ViewPagerCustom
+            android:id="@+id/pic_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioGroup
+            android:id="@+id/rg_point"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <Button
+            android:id="@+id/btn_gotomain"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/icon_tijiao"
+            android:text="立即体验"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_goon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="跳过"
+        android:textColor="@color/main_bq_color"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_less_second"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_roung_black"
+        android:gravity="center"
+        android:text="3s"
+        android:textColor="#858583"
+        android:textSize="16sp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <GridView
+        android:id="@+id/grid_bq1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="20dp"
+        android:numColumns="4"
+        android:padding="10dp"
+        android:verticalSpacing="20dp" />
+
+    <GridView
+        android:id="@+id/grid_bq2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlyt_bottom"
+        android:layout_below="@+id/grid_bq1"
+        android:horizontalSpacing="30dp"
+        android:numColumns="2"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:verticalSpacing="10dp"
+        android:visibility="visible" />
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_selected_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:layout_below="@+id/grid_bq1"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:transcriptMode="normal" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f4f4f4" />
+
+        <Button
+            android:id="@+id/btn_send_labels"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_login_login"
+            android:text="确定" />
+    </RelativeLayout>
+
+</RelativeLayout>

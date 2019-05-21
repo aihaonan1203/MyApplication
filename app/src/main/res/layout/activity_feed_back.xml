@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/my_p_lay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_bg_color1"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="@color/main_bq_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="我的推广"
+            android:textColor="@color/main_bq_color"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llyt_wenti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="常见问题"
+                android:textColor="@color/main_bq_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/line_wenti"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:background="#B18045" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_yijian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="意见反馈"
+                android:textColor="@color/main_bq_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/line_yijian"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:background="#B18045"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_fankui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:text="我的反馈"
+                android:textColor="@color/main_bq_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/line_fankui"
+                android:layout_width="50dp"
+                android:layout_height="3dp"
+                android:background="#B18045"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/idea_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="#fff" />
+
+
+</LinearLayout>

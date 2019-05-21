@@ -1,0 +1,177 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">false</item>
+        <!-- 隐藏标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 底部按钮样式-->
+    <style name="main_tab_bottom">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- 历史播放-->
+    <style name="play_history_rbtn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- 首页推荐视频imageview-->
+    <style name="main_video_img">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="Widget"></style>
+
+    <style name="Widget.ProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:minWidth">36dip</item>
+        <item name="android:maxWidth">36dip</item>
+        <item name="android:minHeight">36dip</item>
+        <item name="android:maxHeight">36dip</item>
+    </style>
+
+    <style name="Widget.ProgressBar.RegularProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progressbar</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:maxHeight">40dip</item>
+        <item name="android:minHeight">20dip</item>
+    </style>
+
+    <style name="video_play_cnxih_bq">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bg_convers_video_biaoqian</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/main_bq_dark_color</item>
+    </style>
+
+    <style name="allvideo_select_cnxih_bq">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/select_allfilm_select</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/select_playhistory_rbtn_color</item>
+    </style>
+
+    <style name="login_edt_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/ts_16</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+
+    <style name="ny_actor_style">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/select_data_sort</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/select_login_rb_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <!--带输入框-->
+    <style name="inputDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <!--<item name="android:windowFrame">@android:color/transparent</item>&lt;!&ndash; 边框 &ndash;&gt;-->
+        <!--<item name="android:windowIsFloating">true</item>&lt;!&ndash; 是否浮现在activity之上 &ndash;&gt;-->
+        <!--<item name="android:windowIsTranslucent">false</item>&lt;!&ndash; 半透明 &ndash;&gt;-->
+        <!--<item name="android:windowNoTitle">true</item>&lt;!&ndash; 无标题 &ndash;&gt;-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>&lt;!&ndash; 自己想要的背景 &ndash;&gt;-->
+        <!--<item name="android:backgroundDimEnabled">true</item>&lt;!&ndash; 模糊 &ndash;&gt;-->
+        <item name="android:windowSoftInputMode">stateAlwaysVisible</item><!--显示软件盘-->
+    </style>
+
+    <style name="vip_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/vip_style</item>
+        <item name="android:textSize">@dimen/ts_16</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="vip_stylea">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@drawable/vip_style</item>
+        <item name="android:textSize">@dimen/ts_16</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="loginbtna">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">@dimen/ts_16</item>
+        <item name="android:background">@drawable/btn_logina</item>
+    </style>
+
+    <style name="loginbtn">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/btn_login</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+
+</resources>

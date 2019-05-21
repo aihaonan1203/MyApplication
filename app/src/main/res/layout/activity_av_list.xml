@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/my_p_lay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_bg_color1"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="女优列表"
+            android:textColor="@color/main_bq_color"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_video_type"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_renq"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_data_sort"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="人气最高"
+            android:textColor="@drawable/select_login_rb_color"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_nums"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_data_sort"
+            android:button="@null"
+            android:gravity="center"
+            android:text="片量最多"
+            android:textColor="@drawable/select_login_rb_color"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/rg_zb"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/rb_all"
+                style="@style/ny_actor_style"
+                android:checked="true"
+                android:text="全部" />
+
+            <RadioButton
+                android:id="@+id/rb_a"
+                style="@style/ny_actor_style"
+                android:text="A罩杯" />
+
+            <RadioButton
+                android:id="@+id/rb_b"
+                style="@style/ny_actor_style"
+                android:text="B罩杯" />
+
+            <RadioButton
+                android:id="@+id/rb_c"
+                style="@style/ny_actor_style"
+                android:text="C罩杯" />
+
+            <RadioButton
+                android:id="@+id/rb_d"
+                style="@style/ny_actor_style"
+                android:text="D罩杯" />
+
+            <RadioButton
+                android:id="@+id/rb_e"
+                style="@style/ny_actor_style"
+                android:text="E罩杯" />
+
+            <RadioButton
+                android:id="@+id/rb_f"
+                style="@style/ny_actor_style"
+                android:text="F罩杯" />
+
+            <RadioButton
+                android:id="@+id/rb_g"
+                style="@style/ny_actor_style"
+                android:text="G罩杯" />
+
+            <RadioButton
+                android:id="@+id/rb_h"
+                style="@style/ny_actor_style"
+                android:text="H罩杯" />
+
+            <RadioButton
+                android:id="@+id/rb_i"
+                style="@style/ny_actor_style"
+                android:text="I罩杯" />
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#f3f3f3" />
+
+    <GridView
+        android:id="@+id/gv_actors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:verticalSpacing="5dp" />
+</LinearLayout>

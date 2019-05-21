@@ -1,0 +1,5 @@
+include ':app', ':baselib1',':myapplication1',':jcvideoplayer-lib', ':library_PullToRefresh1'
+project(':baselib1').projectDir = new File('baselib')
+//project(':vitamio1').projectDir = new File('vitamio')
+//project(':vitamio1').projectDir = new File('vitamio')jcvideoplayer-lib
+project(':library_PullToRefresh1').projectDir = new File('library_PullToRefresh')

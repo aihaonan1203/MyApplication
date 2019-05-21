@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KEM视频</string>
+    <string name="video_type_all">全部</string>
+    <string name="my_look_history">目前历史记录观看过0部</string>
+    <string name="my_locl_ount">目前本地大片有0部</string>
+    <string name="my_like_count">目前已有喜欢0部</string>
+    <string name="my_frag_viplv">L%1$s小白</string>
+    <string name="my_frag_less_count">下一等级还差0人</string>
+    <string name="accm_nn">1-7个字，支持中文、英文、数字、"\"_\""</string>
+</resources>

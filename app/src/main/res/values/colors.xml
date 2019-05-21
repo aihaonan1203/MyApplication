@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--黑色30%透明-->
+    <color name="llyt_bg_color_alpha_30">#4c000000</color>
+    <!--黑色50%透明-->
+    <color name="llyt_bg_color_alpha_50">#7f000000</color>
+    <!--黑色70%透明-->
+    <color name="llyt_bg_color_alpha_70">#b2000000</color>
+    <!--白色30%透明-->
+    <color name="color_white_alpha_30">#4cffffff</color>
+    <!--白色50%透明-->
+    <color name="color_white_alpha_50">#7fffffff</color>
+    <!--白色70%透明-->
+    <color name="color_white_alpha_70">#b2ffffff</color>
+
+    <color name="black">#000000</color>
+    <color name="cl333333">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="ph_del">#f65859</color>
+    <color name="green">#19FF56</color>
+
+    <color name="main_bg_color">#333333</color>
+
+    <color name="main_bg_color1">#323232</color>
+
+    <color name="main_bq_color">#e2b482</color>
+    <color name="main_text_gray_color">#898a8c</color>
+    <color name="main_text_yel_color">#dbb892</color>
+    <color name="main_bq_dark_color">#b38937</color>
+
+    <color name="main_noselect_color">#939393</color>
+
+    <color name="cl262626">#262626</color>
+    <color name="set_cl">#ababab</color>
+    <color name="pic_select_cl">#007bfe</color>
+
+    <color name="login_bg">#2c2c2c</color>
+    <color name="tuig_cl">#bc915d</color>
+    <color name="btn_login_color">#FBE3C7</color>
+    <color name="huise">#EDEDED</color>
+
+</resources>

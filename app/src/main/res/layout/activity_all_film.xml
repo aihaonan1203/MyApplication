@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/main_bg_color"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rlyt_seasrch_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/bg_convers_top">
+
+            <RelativeLayout
+                android:id="@+id/rlyt_seasrch"
+                android:layout_width="40dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/icon_sousuo" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edt_search_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toLeftOf="@+id/iv_delete_input"
+                android:background="@null"
+                android:hint="输入关键词查找片源"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="#bebebe"
+                android:textColorHint="#bebebe"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_search_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toLeftOf="@+id/iv_delete_input"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text="输入关键词查找片源"
+                android:textColor="#bebebe"
+                android:textColorHint="#bebebe"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_delete_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/icon_shanchu" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/main_bq_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_sort_all"
+                    style="@style/allvideo_select_cnxih_bq"
+                    android:checked="true"
+                    android:text="综合" />
+
+                <RadioButton
+                    android:id="@+id/rb_sort_more"
+                    style="@style/allvideo_select_cnxih_bq"
+                    android:text="最多播放" />
+
+                <RadioButton
+                    android:id="@+id/rb_sort_update"
+                    style="@style/allvideo_select_cnxih_bq"
+                    android:text="最近更新" />
+
+                <RadioButton
+                    android:id="@+id/rb_sort_like"
+                    style="@style/allvideo_select_cnxih_bq"
+                    android:text="最多喜欢" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_type"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/rb_type_all"
+                style="@style/allvideo_select_cnxih_bq"
+                android:text="全部" />
+
+            <RadioButton
+                android:id="@+id/rb_type_more"
+                style="@style/allvideo_select_cnxih_bq"
+                android:checked="true"
+                android:text="两字" />
+
+            <RadioButton
+                android:id="@+id/rb_type_update"
+                style="@style/allvideo_select_cnxih_bq"
+                android:text="可写四字" />
+
+            <RadioButton
+                android:id="@+id/rb_type_like"
+                style="@style/allvideo_select_cnxih_bq"
+                android:text="可写四字" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ececec" />
+
+
+
+        <GridView
+            android:id="@+id/gv_all_films"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:verticalSpacing="5dp" />
+
+</LinearLayout>

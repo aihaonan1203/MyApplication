@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/gv_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/select_feedback_select"
+        android:button="@null"
+        android:gravity="center"
+        android:text="测试"
+        android:textColor="@drawable/select_feedback_check_color"
+        android:textSize="14sp" />
+
+</LinearLayout>

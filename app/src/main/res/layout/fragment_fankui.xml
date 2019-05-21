@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_shaod"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="加载中..."
+        android:textColor="@color/main_bq_color"
+        android:textSize="17sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/nono_bg"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_feedbacks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/white"
+        android:background="#f9f9f9"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.my.VipActivity">
+
+    <RelativeLayout
+        android:id="@+id/my_p_lay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_bg_color1"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="VIP等级兑换"
+            android:textColor="@color/main_bq_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp">
+
+        <com.zcf.bananavideohannan.view.XCRoundImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/moren_headimg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FDFAF3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#F5D5AC"
+            android:text="规则说明"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="兑换后立即获得对应等级的VIP服务" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/yzm"
+            style="@style/vip_stylea"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_weight="4"
+            android:hint="请输入右边验证码"></EditText>
+
+        <TextView
+            android:id="@+id/yzm_text"
+            style="@style/loginbtna"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="#9C9C9C"></TextView>
+    </LinearLayout>
+
+    <EditText
+        android:maxLength="12"
+        android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:id="@+id/yqm"
+        style="@style/vip_style"
+        android:hint="请输入12位激活码"></EditText>
+
+    <Button
+        android:id="@+id/duihuan"
+        style="@style/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="立即兑换" />
+</LinearLayout>

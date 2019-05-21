@@ -1,0 +1,107 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:2:1-37:12
+	package
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:3:5-33
+		INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml
+		INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml
+		INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml
+		INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml
+uses-permission#android.permission.CAMERA
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:8:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:9:22-63
+uses-permission#android.permission.INTERNET
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:10:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:13:5-75
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:13:22-72
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:15:5-71
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:15:22-68
+uses-feature#android.hardware.camera
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:17:5-60
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:17:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:18:5-70
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:18:19-67
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:20:5-68
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:20:22-65
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:21:5-80
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:21:22-77
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:22:5-84
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:22:22-81
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:23:5-76
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:23:22-73
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:25:5-85
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:25:22-82
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:26:5-76
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:26:22-73
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:27:5-73
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:27:22-70
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:28:5-75
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:28:22-72
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:29:5-81
+	android:name
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:29:22-78
+application
+ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:32:5-35:19
+	android:allowBackup
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml:33:9-35
+uses-sdk
+INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml
+INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml
+		ADDED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml
+		INJECTED from D:\xiangjiao\xiangjiao\MyApplication\baselib\src\main\AndroidManifest.xml

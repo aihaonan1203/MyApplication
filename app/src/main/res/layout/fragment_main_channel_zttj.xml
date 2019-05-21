@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl262626"
+    android:orientation="vertical"
+    android:paddingLeft="10dp">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        ptr:ptrHeaderTextColor="@color/main_text_gray_color">
+
+        <LinearLayout
+            android:id="@+id/llyt_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="推荐"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.zcf.bananavideohannan.view.ScrollRecyclerView
+                android:id="@+id/zltj_horizon_listview"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="15dp" />
+            <!--<com.gaotai.baselib.view.HorizontalListView-->
+            <!--android:id="@+id/zltj_horizon_listview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="170dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:transcriptMode="normal" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_convers_vp_edt_13">
+
+                <com.zcf.bananavideohannan.view.ViewPagerCustom
+                    android:id="@+id/zltj_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <RadioGroup
+                    android:id="@+id/zltj_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:orientation="horizontal" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="热门专题"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_remen_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/rlyt_remen_more_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="更多"
+                        android:textColor="#C5C5C5"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/rlyt_remen_more_btn"
+                        android:src="@drawable/btn_enter"
+                       />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.zcf.bananavideohannan.view.MyGridViewNoScroll
+                android:id="@+id/gv_rmzt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/cl262626"
+                android:numColumns="4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="人气"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/zltj_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="更多"
+                        android:textColor="#C5C5C5"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/zltj_more"
+                        android:src="@drawable/btn_enter" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <com.zcf.bananavideohannan.view.MyListviewNoScroll
+                android:id="@+id/lv_nvyou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/black"
+                android:dividerHeight="1dp" />
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

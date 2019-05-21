@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/zltj_hlv_rllt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_convers_vp_edt_13"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="15dp">
+
+        <com.zcf.bananavideohannan.view.RoundImageView
+            android:id="@+id/zltj_hlv_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/moren_headimg"
+            pv:border_inside_color="#b38937"
+            pv:border_thickness="3dp" />
+
+        <TextView
+            android:id="@+id/zltj_hlv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/zltj_hlv_img"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/zltj_hlv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/zltj_hlv_img"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/zltj_hlv_img"
+            android:textColor="@color/main_noselect_color" />
+
+        <TextView
+            android:id="@+id/zltj_hlv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zltj_hlv_img"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#3E3E3E" />
+
+        <View
+            android:id="@+id/xian"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/zltj_hlv_msg"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/main_noselect_color" />
+
+        <Button
+            android:id="@+id/zltj_hlv_btn"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/xian"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_tijiao"
+            android:text="立刻选片"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+

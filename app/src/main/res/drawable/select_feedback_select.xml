@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bgerweima" android:state_checked="true" />
+    <item android:drawable="@drawable/bg_convers_white_channel_bq_border_ty" android:state_checked="false" />
+</selector>

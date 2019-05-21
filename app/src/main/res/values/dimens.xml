@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_def_txsize">18sp</dimen>
+    <dimen name="icon_24dp">24dp</dimen>
+    <dimen name="login_txsize">15sp</dimen>
+    <dimen name="ts_16">16sp</dimen>
+    <dimen name="login_llyt_height">40dp</dimen>
+    <dimen name="def_left_tv">18dp</dimen>
+    <dimen name="editpwd_margin">10dp</dimen>
+</resources>

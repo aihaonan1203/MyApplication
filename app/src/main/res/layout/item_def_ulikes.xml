@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:id="@+id/iv_item_like_icon"
+                android:layout_width="130dp"
+                android:layout_height="160dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/testimg1" />
+
+            <TextView
+                android:id="@+id/tv_item_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_item_like_filmName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="测试数据测试数据"
+            android:textColor="#c0c0c0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

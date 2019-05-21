@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zcf.bananavideohannan.view.ViewPagerNoScroll
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_main_tabs"
+        android:visibility="visible">
+
+    </com.zcf.bananavideohannan.view.ViewPagerNoScroll>
+
+    <RadioGroup
+        android:id="@+id/rg_main_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#424242"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <RadioButton
+            android:id="@+id/rbtn_main_tab_def"
+            style="@style/main_tab_bottom"
+            android:checked="true"
+            android:drawableTop="@drawable/select_main_bottom_def"
+            android:text="首页"
+            android:textColor="@drawable/select_main_bottom_color" />
+
+        <RadioButton
+            android:id="@+id/rbtn_main_tab_channel"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/select_main_bottom_channel"
+            android:text="频道"
+            android:textColor="@drawable/select_main_bottom_color" />
+
+        <RadioButton
+            android:id="@+id/rbtn_main_tab_find"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/select_main_bottom_find"
+            android:text="发现"
+            android:textColor="@drawable/select_main_bottom_color" />
+
+        <RadioButton
+            android:id="@+id/rbtn_main_tab_my"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/select_main_bottom_my"
+            android:text="我的"
+            android:textColor="@drawable/select_main_bottom_color" />
+    </RadioGroup>
+</RelativeLayout>

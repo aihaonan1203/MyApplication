@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/cl262626"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlyt_get_more"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="3dp"
+                android:layout_height="@dimen/def_left_tv"
+                android:layout_centerVertical="true"
+                android:background="@color/main_bq_color"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_item_custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="最新片源"
+                android:textColor="@color/white"
+                android:textSize="@dimen/main_def_txsize" />
+
+            <LinearLayout
+                android:id="@+id/llyt_get_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/main_def_txsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/btn_enter" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.zcf.bananavideohannan.view.MyGridViewNoScroll
+            android:id="@+id/gr_item_films"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cl262626"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:verticalSpacing="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/black" />
+</LinearLayout>
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cl262626"
+    android:gravity="center"
+    android:paddingBottom="20dp">
+
+    <com.zcf.bananavideohannan.view.RoundImageView
+        android:id="@+id/item_zltj_pop_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/moren_headimg"
+        pv:border_inside_color="#FCE3B5"
+        pv:border_thickness="3dp" />
+
+    <TextView
+        android:id="@+id/item_zltj_pop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_zltj_pop_img"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/item_zltj_pop_img"
+        android:text="马尔阿迪王"
+        android:textColor="#E9E9E9"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/item_zltj_pop_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_zltj_pop_name"
+        android:layout_below="@id/item_zltj_pop_name"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="你是我的小丫小苹果,你是我的小丫小苹果,你是我的小丫小苹果你是我的小丫小苹果,你是我的小丫小苹果"
+        android:textColor="#E9E9E9" />
+
+    <TextView
+        android:id="@+id/tv_item_filmnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/img_yingpian"
+        android:gravity="center"
+        android:text="60部影片"
+        android:textColor="#ffffff" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_zltj_pop_hlv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/item_zltj_pop_img"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:transcriptMode="normal" />
+
+</RelativeLayout>

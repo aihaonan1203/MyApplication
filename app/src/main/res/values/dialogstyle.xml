@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogStyle1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/llyt_bg_color_alpha_30</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>
